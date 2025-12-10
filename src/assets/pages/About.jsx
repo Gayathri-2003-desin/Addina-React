@@ -1,10 +1,17 @@
 import React from 'react'
-import Navbar from '../../Navbar'
-import Footer from '../../Footer'
-import AboutLanding from '../About-components/AboutLanding'
-import Design from '../About-components/Design'
-import VideoImage from '../About-components/VideoImage'
-import OfferSection from '../OfferSection'
+
+import Navbar from '../Navbar'
+
+import Footer from '../Footer'
+
+import AboutLanding from '../components/about/AboutLanding'
+
+import Design from '../components/about/Design'
+
+import VideoImage from '../components/about/VideoImage'
+
+import OfferSection from '../components/OfferSection'
+
 
 const About = () => {
   return (

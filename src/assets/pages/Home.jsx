@@ -1,30 +1,43 @@
 import { useState } from 'react'
 
-import Navbar from '../../Navbar'
 
-import Landing from '../Landing'
+import Navbar from '../Navbar'
 
-import Feature2 from '../Feature2'
 
-import Sale from '../Sale'
+import Landing from '../components/Landing'
 
-import Dining from '../Dining'
 
-import Collection from '../Collection'
+import Feature2 from '../components/Feature2'
 
-import LimitOffer from '../LimitOffer'
 
-import FeedBack from '../FeedBack'
+import Sale from '../components/Sale'
 
-import BestSeller from '../BestSeller'
 
-import Blog from '../Blog'
+import Dining from '../components/Dining'
 
-import OfferSection from '../OfferSection'
 
-import Brands from '../Brands'
+import Collection from '../components/Collection'
 
-import Footer from '../../Footer'
+
+import LimitOffer from '../components/LimitOffer'
+
+
+import FeedBack from '../components/FeedBack'
+
+
+import BestSeller from '../components/BestSeller'
+
+
+import Blog from '../components/Blog'
+
+
+import OfferSection from '../components/OfferSection'
+
+
+import Brands from '../components/Brands'
+
+
+import Footer from '../Footer'
 
 
 function Home() {
