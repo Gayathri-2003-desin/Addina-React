@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 
-const VideoImage = () => {
+const VideoImage = ({ bgImage }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <div
-      className="
-        relative w-full h-[500px] rounded-lg bg-cover bg-center 
-      "
-      style={{ backgroundImage: "url('/images/about-video-image.jpg')" }}
+      className="relative w-full h-[500px]  bg-no-repeat bg-center"
+      style={{ backgroundImage: `url('${bgImage}')` }}
     >
       {/* PLAY BUTTON */}
       <button
@@ -19,12 +17,10 @@ const VideoImage = () => {
           shadow-lg cursor-pointer relative
         "
       >
-        {/* Play Icon */}
         <svg width="32" height="32" viewBox="0 0 24 24" fill="black" className="z-10">
           <path d="M8 5v14l11-7z" />
         </svg>
 
-        {/* Ripple Animation */}
         <span className="absolute inset-0 rounded-full bg-white opacity-30 animate-ping"></span>
       </button>
 

@@ -4,7 +4,7 @@ import Navbar from '../Navbar'
 
 import Footer from '../Footer'
 
-import AboutLanding from '../components/about/AboutLanding'
+import PageLanding from '../components/about/PageLanding'
 
 import Design from '../components/about/Design'
 
@@ -22,9 +22,11 @@ const About = () => {
       </div>
 
 <div className='flex flex-col gap-[120px] '>
-      <div >
-<AboutLanding/>
-      </div>
+  
+<PageLanding 
+  title="About Us"
+  subtitle="Home . About Us"
+/>
 
 <div>
   <Design/>
@@ -32,7 +34,7 @@ const About = () => {
 
 
 <div>
-<VideoImage/>
+<VideoImage bgImage="/images/about-video-image.jpg" />
 </div>
 
 <div>

@@ -8,24 +8,28 @@ const products = [
     price: "USD 120.00",
     discount: "15% Off",
   },
+
   {
     src: "/images/product2.png",
     title: "Alexander Roll Arm Sofa",
     price: "USD 350.00",
     discount: "10% Off",
   },
+
   {
     src: "/images/product3.png",
     title: "Brasslegged Armchair",
     price: "USD 290.00",
     discount: "30% Off",
   },
+
   {
     src: "/images/product4.png",
     title: "Leather Chair",
     price: "USD 200.00",
     discount: "10% Off",
   },
+
   {
     src: "/images/product5.png",
     title: "Alexander Sofa",
@@ -53,19 +57,14 @@ const products = [
     price: "USD 49.00",
     discount: "NEW",
   },
+
 ];
 
-const Collection = () => {
+const ProductList = () => {
   return (
     <div className="mx-[100px] ">
-
-
-      {/* SECTION TITLE */}
-      <h5 className="font-semibold uppercase bg-[rgba(177,139,94,0.15)] px-[16px] py-[6px] text-[16px] inline-block text-[#b18b5e]">
-        THIS MONTH
-      </h5>
-<div className='flex justify-between items-center'>
-      <h1 className="text-black text-[52px] font-bold mt-3">Trendy Collection</h1>
+     <div className='flex justify-between items-center'>
+      <h1 className="text-black text-[26px] font-bold mt-3">20 Items on List</h1>
 
       {/* FILTER OPTIONS */}
       <div className="flex gap-3 mt-2">
@@ -76,14 +75,13 @@ const Collection = () => {
       </div>
 </div>
 
-      {/* PRODUCT LIST */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[70px] mt-10">
 
         {products.map((item, index) => (
           <div key={index} className="w-full">
 
             {/* IMAGE CARD */}
-            <div className="relative bg-[#f5f1e6] p-6 group overflow-hidden ">
+            <div className="relative  border-gray-300 border-1 p-6 group overflow-hidden ">
 
               {/* DISCOUNT */}
               <div className="absolute top-4 left-4 bg-[#b18b5e] text-white text-xs px-3 py-1 rounded-full">
@@ -120,10 +118,11 @@ const Collection = () => {
             </div>
 
             {/* TEXT */}
+            <div className='border-gray-300 border-1 p-4'>
             <h3 className="text-[20px] font-semibold mt-4">{item.title}</h3>
             <div className="flex gap-1 text-[#b18b5e] text-xl mt-1">★ ★ ★ ★ ★</div>
             <p className="mt-1 text-gray-600 font-medium">{item.price}</p>
-
+          </div>
           </div>
         ))}
 
@@ -132,4 +131,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default ProductList;

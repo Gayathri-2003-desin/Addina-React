@@ -25,16 +25,24 @@ const Navbar = () => {
     </div>
   
           <div className='text-black flex gap-10 justify-center self-center text-base font-medium'>
-            <h4>Shop</h4>
+             <Link to="/shop">
+    <h4>Shop</h4>
+  </Link>
         </div>
                   <div className='text-black flex gap-10 justify-center self-center text-base font-medium'>
-            <h4>Pages</h4>
+             <Link to="/pages">
+    <h4>Pages</h4>
+  </Link>
         </div>
          <div className='text-black flex gap-10 justify-center self-center text-base font-medium'>
-            <h4>Blog</h4>
+                        <Link to="/blog">
+    <h4>Blog</h4>
+  </Link>
         </div>
             <div className='text-black flex gap-10 justify-center self-center text-base font-medium'>
-            <h4>Contact</h4>
+                                    <Link to="/contact">
+    <h4>Contact</h4>
+  </Link>
         </div>
     
       
